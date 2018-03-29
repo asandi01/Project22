@@ -13,20 +13,29 @@ using Android.Widget;
 namespace Project22 {
     [Activity(Label = "Informacion Medica")]
     public class InfoMedicaActivity : Activity {
+        string personaId, personaNombre, personaIdentificacion;
         Button btnAdd;  
         ListView lv;
-        IList<Persona> listItsms = null;
+        IList<InfoMedica> listItsms = null;
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Personas);
+            SetContentView(Resource.Layout.InfoMedica);
 
-            btnAdd=FindViewById<Button>(Resource.Id.personaListBtnAdd);        
-            lv=FindViewById<ListView>(Resource.Id.personaListListView);
+            //Optener el dato de la persona
+            personaId= Intent.GetStringExtra("PersonaId")??string.Empty;
+            personaNombre=Intent.GetStringExtra("PersonaNombre")??string.Empty;
+            personaIdentificacion=Intent.GetStringExtra("PersonaIdentificacion")??string.Empty;
+
+            btnAdd=FindViewById<Button>(Resource.Id.infoMedicaListBtnAdd);        
+            lv=FindViewById<ListView>(Resource.Id.infoMedicaListListView);
 
             btnAdd.Click+=delegate {
                 var activityAddEdit = new Intent(this, typeof(AddEditPersonaActivity));
+                activityAddEdit.PutExtra("PersonaId", personaId);
+                activityAddEdit.PutExtra("PersonaNombre", personaNombre);
+                activityAddEdit.PutExtra("PersonaIdentificacion", personaIdentificacion);
                 StartActivity(activityAddEdit);
             };
 
