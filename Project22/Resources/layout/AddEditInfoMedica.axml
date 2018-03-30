@@ -17,7 +17,8 @@
             android:layout_height="wrap_content">
             <TableRow
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -32,6 +33,15 @@
                     android:editable="false"
                     android:hint="Id"
                     android:visibility="invisible" />
+                <EditText
+                    android:id="@+id/etidPersona"
+                    style="@style/input_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:hint="Id"
+                    android:visibility="invisible" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -39,15 +49,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre " />
+                    android:text="Identificación" />
                 <EditText
-                    android:id="@+id/etnombre"
+                    android:id="@+id/etidentificacion"
                     style="@style/input_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etid"
                     android:layout_weight="1"
-                    android:hint="Nombre" />
+                    android:editable="false"
+                    android:hint="Identificación" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -55,15 +66,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Apellidos" />
+                    android:text="Peso" />
                 <EditText
-                    android:id="@+id/etapellidos"
+                    android:id="@+id/etpeso"
                     style="@style/input_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etid"
                     android:layout_weight="1"
-                    android:hint="Apellidos" />
+                    android:hint="Peso"
+                    android:numeric="decimal" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -71,15 +83,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dirección" />
+                    android:text="Altura" />
                 <EditText
-                    android:id="@+id/etdireccion"
+                    android:id="@+id/etaltura"
                     style="@style/input_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etapellidos"
                     android:layout_weight="1"
-                    android:hint="Dirección" />
+                    android:hint="Altura"
+                    android:numeric="decimal" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -87,15 +100,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Correo" />
+                    android:text="Presión Arterial" />
                 <EditText
-                    android:id="@+id/etcorreo"
+                    android:id="@+id/etpresionarterial"
                     style="@style/input_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etapellidos"
                     android:layout_weight="1"
-                    android:hint="Correo" />
+                    android:hint="Presión Arterial" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -103,15 +116,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Teléfono" />
+                    android:text="Frecuencia Cardiaca" />
                 <EditText
-                    android:id="@+id/ettelefono"
+                    android:id="@+id/etfrecuenciacardiaca"
                     style="@style/input_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etcorreo"
                     android:layout_weight="1"
-                    android:hint="Teléfono" />
+                    android:hint="Frecuencia Cardiaca" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -119,71 +132,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fecha Nac" />
-                <EditText
-                    android:id="@+id/dpfechanac"
-                    style="@style/input_style"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/ettelefono"
-                    android:layout_weight="1"
-                    android:hint="Fecha Nac: 25/12/2017" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sexo " />
-                <EditText
-                    android:id="@+id/etsexo"
-                    style="@style/input_style"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/dpfechanac"
-                    android:layout_weight="1"
-                    android:hint="Sexo" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Est Civil " />
-                <EditText
-                    android:id="@+id/etestadocivil"
-                    style="@style/input_style"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/etsexo"
-                    android:layout_weight="1"
-                    android:hint="Estado Civil" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tip Sangre " />
-                <EditText
-                    android:id="@+id/ettiposangre"
-                    style="@style/input_style"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/etestadocivil"
-                    android:layout_weight="1"
-                    android:hint="Tipo de Sangre" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Detalle" />
+                    android:text="Detalle"
+                    android:id="@+id/textView11" />
                 <EditText
                     android:id="@+id/etdetalle"
                     style="@style/input_style"

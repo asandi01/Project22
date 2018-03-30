@@ -14,7 +14,7 @@ using Android.Database;
 
 namespace Project22 {
     class PersonaDbHelper : SQLiteOpenHelper {
-        private const string APP_DATABASENAME = "Project22.db3";
+        private const string APP_DATABASENAME = "Project22a.db3";
         private const int APP_DATABASE_VERSION = 1;
 
         public PersonaDbHelper(Context ctx) :
@@ -22,8 +22,25 @@ namespace Project22 {
         }
 
         public override void OnCreate(SQLiteDatabase db) {
+
+            db.ExecSQL(@"CREATE TABLE IF NOT EXISTS InfoMedica(
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            idPersona TEXT NOT NULL,
+                            identificacion TEXT NOT NULL,
+                            peso TEXT NOT NULL,
+                            altura TEXT NOT NULL,
+                            presionArterial TEXT,
+                            frecuenciaCardiaca TEXT,
+                            detalle TEXT)");
+
+            db.ExecSQL("Insert into InfoMedica(idPersona, identificacion, peso, altura, presionArterial, frecuenciaCardiaca, detalle) "+
+                "VALUES('1', '112850706','65','165','180-60','150', 'Algun detalle')");
+
+            db.ExecSQL("Insert into InfoMedica(idPersona, identificacion, peso, altura, presionArterial, frecuenciaCardiaca, detalle) "+
+                "VALUES('1', '112850706','74','165','181-60','151', 'Algun detalle nuevo')");
+
             db.ExecSQL(@"CREATE TABLE IF NOT EXISTS Persona(
-                            Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
                             identificacion TEXT NOT NULL,
                             nombre TEXT NOT NULL,
                             apellidos TEXT NOT NULL,

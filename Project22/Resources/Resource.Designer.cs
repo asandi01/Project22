@@ -109,7 +109,10 @@ namespace Project22
 			public const int list_selector_alternate = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int search = 2130837517;
+			public const int logo = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int search = 2130837518;
 			
 			static Drawable()
 			{
@@ -124,98 +127,146 @@ namespace Project22
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f07001a
-			public const int btnPersona = 2131165210;
+			// aapt resource value: 0x7f07002a
+			public const int btnPersona = 2131165226;
 			
-			// aapt resource value: 0x7f07000b
-			public const int btninsertar = 2131165195;
+			// aapt resource value: 0x7f07000c
+			public const int btninsertar = 2131165196;
 			
-			// aapt resource value: 0x7f070006
-			public const int dpfechanac = 2131165190;
-			
-			// aapt resource value: 0x7f070002
-			public const int etapellidos = 2131165186;
+			// aapt resource value: 0x7f070010
+			public const int dpfechanac = 2131165200;
 			
 			// aapt resource value: 0x7f070004
-			public const int etcorreo = 2131165188;
+			public const int etaltura = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public const int etapellidos = 2131165189;
+			
+			// aapt resource value: 0x7f070008
+			public const int etcorreo = 2131165192;
 			
 			// aapt resource value: 0x7f07000a
 			public const int etdetalle = 2131165194;
 			
-			// aapt resource value: 0x7f070003
-			public const int etdireccion = 2131165187;
+			// aapt resource value: 0x7f07000e
+			public const int etdireccion = 2131165198;
 			
-			// aapt resource value: 0x7f070008
-			public const int etestadocivil = 2131165192;
+			// aapt resource value: 0x7f070012
+			public const int etestadocivil = 2131165202;
+			
+			// aapt resource value: 0x7f070007
+			public const int etfrecuenciacardiaca = 2131165191;
 			
 			// aapt resource value: 0x7f070000
 			public const int etid = 2131165184;
 			
-			// aapt resource value: 0x7f07000c
-			public const int etidentificacion = 2131165196;
-			
 			// aapt resource value: 0x7f070001
-			public const int etnombre = 2131165185;
+			public const int etidPersona = 2131165185;
 			
-			// aapt resource value: 0x7f070007
-			public const int etsexo = 2131165191;
-			
-			// aapt resource value: 0x7f070005
-			public const int ettelefono = 2131165189;
-			
-			// aapt resource value: 0x7f070009
-			public const int ettiposangre = 2131165193;
-			
-			// aapt resource value: 0x7f07000e
-			public const int infoMedicaListBtnAdd = 2131165198;
-			
-			// aapt resource value: 0x7f07000f
-			public const int infoMedicaListListView = 2131165199;
-			
-			// aapt resource value: 0x7f070019
-			public const int lr_deleteBtn = 2131165209;
-			
-			// aapt resource value: 0x7f070016
-			public const int lr_descriptin = 2131165206;
-			
-			// aapt resource value: 0x7f070013
-			public const int lr_email = 2131165203;
-			
-			// aapt resource value: 0x7f070011
-			public const int lr_fullName = 2131165201;
-			
-			// aapt resource value: 0x7f070012
-			public const int lr_mobile = 2131165202;
-			
-			// aapt resource value: 0x7f070018
-			public const int lr_viewBtn = 2131165208;
-			
-			// aapt resource value: 0x7f07001b
-			public const int personaListBtnAdd = 2131165211;
-			
-			// aapt resource value: 0x7f07001d
-			public const int personaListBtnSearch = 2131165213;
-			
-			// aapt resource value: 0x7f07001e
-			public const int personaListListView = 2131165214;
-			
-			// aapt resource value: 0x7f07001c
-			public const int personaListTxtSearch = 2131165212;
+			// aapt resource value: 0x7f070002
+			public const int etidentificacion = 2131165186;
 			
 			// aapt resource value: 0x7f07000d
-			public const int tableLayout = 2131165197;
+			public const int etnombre = 2131165197;
+			
+			// aapt resource value: 0x7f070003
+			public const int etpeso = 2131165187;
+			
+			// aapt resource value: 0x7f070006
+			public const int etpresionarterial = 2131165190;
+			
+			// aapt resource value: 0x7f070011
+			public const int etsexo = 2131165201;
+			
+			// aapt resource value: 0x7f07000f
+			public const int ettelefono = 2131165199;
+			
+			// aapt resource value: 0x7f07000b
+			public const int ettiposangre = 2131165195;
+			
+			// aapt resource value: 0x7f070029
+			public const int imageView1 = 2131165225;
 			
 			// aapt resource value: 0x7f070014
-			public const int tableRow1 = 2131165204;
+			public const int infoMedicaListBtnAdd = 2131165204;
+			
+			// aapt resource value: 0x7f070016
+			public const int infoMedicaListListView = 2131165206;
+			
+			// aapt resource value: 0x7f07001c
+			public const int lr_altura = 2131165212;
+			
+			// aapt resource value: 0x7f070021
+			public const int lr_deleteBtn = 2131165217;
+			
+			// aapt resource value: 0x7f070026
+			public const int lr_descriptin = 2131165222;
+			
+			// aapt resource value: 0x7f07001f
+			public const int lr_detalle = 2131165215;
+			
+			// aapt resource value: 0x7f070024
+			public const int lr_email = 2131165220;
+			
+			// aapt resource value: 0x7f07001e
+			public const int lr_frecuenciacardiaca = 2131165214;
+			
+			// aapt resource value: 0x7f070022
+			public const int lr_fullName = 2131165218;
+			
+			// aapt resource value: 0x7f070018
+			public const int lr_identificacion = 2131165208;
+			
+			// aapt resource value: 0x7f07001b
+			public const int lr_masacorporal = 2131165211;
+			
+			// aapt resource value: 0x7f070023
+			public const int lr_mobile = 2131165219;
 			
 			// aapt resource value: 0x7f070015
-			public const int textView1 = 2131165205;
+			public const int lr_nombre = 2131165205;
+			
+			// aapt resource value: 0x7f070019
+			public const int lr_peso = 2131165209;
+			
+			// aapt resource value: 0x7f07001d
+			public const int lr_presionarterial = 2131165213;
+			
+			// aapt resource value: 0x7f070027
+			public const int lr_viewBtn = 2131165223;
+			
+			// aapt resource value: 0x7f07002b
+			public const int personaListBtnAdd = 2131165227;
+			
+			// aapt resource value: 0x7f07002d
+			public const int personaListBtnSearch = 2131165229;
+			
+			// aapt resource value: 0x7f07002e
+			public const int personaListListView = 2131165230;
+			
+			// aapt resource value: 0x7f07002c
+			public const int personaListTxtSearch = 2131165228;
+			
+			// aapt resource value: 0x7f070013
+			public const int tableLayout = 2131165203;
+			
+			// aapt resource value: 0x7f07001a
+			public const int tableRow1 = 2131165210;
+			
+			// aapt resource value: 0x7f070025
+			public const int textView1 = 2131165221;
+			
+			// aapt resource value: 0x7f070009
+			public const int textView11 = 2131165193;
+			
+			// aapt resource value: 0x7f070028
+			public const int textView2 = 2131165224;
+			
+			// aapt resource value: 0x7f070020
+			public const int tlBtns = 2131165216;
 			
 			// aapt resource value: 0x7f070017
-			public const int tlBtns = 2131165207;
-			
-			// aapt resource value: 0x7f070010
-			public const int tlMain = 2131165200;
+			public const int tlMain = 2131165207;
 			
 			static Id()
 			{
@@ -240,13 +291,16 @@ namespace Project22
 			public const int InfoMedica = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int list_row_persona_list = 2130903043;
+			public const int list_row_infomedica_list = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int Main = 2130903044;
+			public const int list_row_persona_list = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Personas = 2130903045;
+			public const int Main = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int Personas = 2130903046;
 			
 			static Layout()
 			{

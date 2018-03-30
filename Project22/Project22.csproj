@@ -54,16 +54,22 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEditInfoMedicaActivity.cs" />
     <Compile Include="AddEditPersonaActivity.cs" />
+    <Compile Include="InfoMedica.cs" />
+    <Compile Include="InfoMedicaActivity.cs" />
+    <Compile Include="InfoMedicaListBaseAdapter.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="PersonaActivity.cs" />
+    <Compile Include="InfoMedicaDbHelper.cs" />
     <Compile Include="PersonaDbHelper.cs" />
     <Compile Include="PersonaListBaseAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="documents\Proyecto Programado Programacion V Tibas II.docx" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -81,6 +87,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddEditInfoMedica.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\list_row_infomedica_list.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -144,6 +153,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

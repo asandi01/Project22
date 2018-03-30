@@ -12,6 +12,7 @@ using Android.Widget;
 
 namespace Project22 {
     class InfoMedica {
+
         public int id {
             get; set;
         }
@@ -27,6 +28,10 @@ namespace Project22 {
             get; set;
         }
 
+        public double altura {
+            get; set;
+        }
+
         public double masaCorporal {
             get; set;
         }
@@ -36,6 +41,10 @@ namespace Project22 {
         }
 
         public string frecuenciaCardiaca {
+            get; set;
+        }
+
+        public string detalle {
             get; set;
         }
 

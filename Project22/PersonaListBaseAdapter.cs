@@ -16,7 +16,7 @@ namespace Project22 {
         IList<Persona> personaListArrayList;
         private LayoutInflater mInflater;
         private Context activity;
-
+               
         public PersonaListBaseAdapter(Context context, IList<Persona> results) {
             this.activity=context;
             personaListArrayList=results;
@@ -53,11 +53,24 @@ namespace Project22 {
                 btnDelete=convertView.FindViewById<ImageView>(Resource.Id.lr_deleteBtn);
                 btnView=convertView.FindViewById<ImageView>(Resource.Id.lr_viewBtn);
 
-                btnView.Click+=(object sender, EventArgs e) => {
+                                                     
+
+
+                btnView.Click+=(object sender, EventArgs e) =>  {
                     var poldel = (int)((sender as ImageView).Tag);
+
                     string id = personaListArrayList[poldel].id.ToString();
-                    Toast.MakeText(activity, "Ver la persona: " +id, ToastLength.Short).Show();
+                    string nombre = personaListArrayList[poldel].nombre.ToString();
+                    string identificacion = personaListArrayList[poldel].identificacion.ToString();
+
+                    var activity2 = new Intent(activity, typeof(InfoMedicaActivity));
+                    activity2.PutExtra("PersonaId", personaListArrayList[poldel].id.ToString());
+                    activity2.PutExtra("PersonaNombre", personaListArrayList[poldel].nombre.ToString());
+                    activity2.PutExtra("PersonaIdentificacion", personaListArrayList[poldel].identificacion.ToString());
+                    activity.StartActivity(activity2);
+                    Toast.MakeText(activity, "Ver persona: " +id +" " +nombre +" " +identificacion, ToastLength.Short).Show();
                 };
+
 
                 btnDelete.Click+=(object sender, EventArgs e) => { 
                     var poldel = (int)((sender as ImageView).Tag);

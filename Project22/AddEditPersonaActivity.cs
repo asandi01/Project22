@@ -90,6 +90,11 @@ namespace Project22 {
                 return;
             }
 
+            if (dpfechanac.Text.Trim().Length<1) {
+                Toast.MakeText(this, "Ingrese la fecha de nacimiento.", ToastLength.Short).Show();
+                return;
+            }
+
             if (etcorreo.Text.Trim().Length>0) {
                 string EmailPattern = @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*";
                 if (!Regex.IsMatch(etcorreo.Text, EmailPattern, RegexOptions.IgnoreCase)) {

@@ -16,8 +16,9 @@ namespace Project22 {
         Button btnAdd, btnSearch;
         EditText txtSearch;
         ListView lv;
-        IList<Persona> listItsms = null;
-        protected override void OnCreate(Bundle bundle) {
+        IList<Persona> listItsms = null; 
+
+        protected override void OnCreate(Bundle bundle) {      
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
@@ -37,8 +38,7 @@ namespace Project22 {
                 LoadPersonaInList();
             };
 
-            LoadPersonaInList();
-
+            LoadPersonaInList();              
         }
 
         private void LoadPersonaInList() {
@@ -52,8 +52,8 @@ namespace Project22 {
 
             lv.Adapter=new PersonaListBaseAdapter(this, listItsms);
 
-            lv.ItemLongClick+=lv_ItemLongClick;
-        }
+            lv.ItemLongClick+=lv_ItemLongClick;         }
+               
 
         private void lv_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e) {
             Persona o = listItsms[e.Position];

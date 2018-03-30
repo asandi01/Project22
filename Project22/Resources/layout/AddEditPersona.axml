@@ -126,7 +126,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etcorreo"
                     android:layout_weight="1"
-                    android:hint="Teléfono" />
+                    android:hint="Teléfono"
+                    android:phoneNumber="true" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"

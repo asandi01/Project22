@@ -4,10 +4,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
-    <Button
-        android:text="Personas"
+    android:minHeight="25px"
+    android:background="#FFF">
+    <TextView
+        android:text="Información medica"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnPersona" />
+        android:id="@+id/textView1"
+        android:textColor="#000"
+        android:textAlignment="center" />
+    <TextView
+        android:text="Realizado por: Albin Sandi Gamboa"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#61380B"
+        android:textAlignment="center" />
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_marginBottom="0.0dp" />
+    <Button
+        android:text="&gt;&gt;Ingresar&lt;&lt;"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPersona"
+        android:textColor="#0489B1"
+        android:background="#3B0B0B" />
 </LinearLayout>
