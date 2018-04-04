@@ -91,6 +91,12 @@ namespace Project22 {
             }
 
             if (dpfechanac.Text.Trim().Length<1) {
+                string fechaPattern = "^(0[1-9]|[12][0-9]|3[01])[.](0[1-9]|1[012])[.](19|20)[0-9]{2}$";
+                                        
+                if (!Regex.IsMatch(dpfechanac.Text, fechaPattern, RegexOptions.IgnoreCase)) {
+                    Toast.MakeText(this, "Fecha de nacimiento incorrecta.", ToastLength.Short).Show();
+                    return;
+                }
                 Toast.MakeText(this, "Ingrese la fecha de nacimiento.", ToastLength.Short).Show();
                 return;
             }
@@ -119,7 +125,11 @@ namespace Project22 {
             per.tipoSangre=ettiposangre.Text;
             per.detalle=etdetalle.Text;
             per.sexo=etsexo.Text;
-            per.fechaNac=Convert.ToDateTime(dpfechanac.Text);
+            try {
+                per.fechaNac=Convert.ToDateTime(dpfechanac.Text);
+            } catch {
+                per.fechaNac=new DateTime();
+            }                                                 
 
             try {
 

@@ -26,7 +26,11 @@ namespace Project22 {
                          
         public string apellidos {
             get; set;
-        }                  
+        }
+
+        public string edad {
+            get; set;
+        }
 
         public string direccion {
             get; set;

@@ -127,8 +127,8 @@ namespace Project22
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f07002a
-			public const int btnPersona = 2131165226;
+			// aapt resource value: 0x7f07002c
+			public const int btnPersona = 2131165228;
 			
 			// aapt resource value: 0x7f07000c
 			public const int btninsertar = 2131165196;
@@ -184,8 +184,8 @@ namespace Project22
 			// aapt resource value: 0x7f07000b
 			public const int ettiposangre = 2131165195;
 			
-			// aapt resource value: 0x7f070029
-			public const int imageView1 = 2131165225;
+			// aapt resource value: 0x7f07002b
+			public const int imageView1 = 2131165227;
 			
 			// aapt resource value: 0x7f070014
 			public const int infoMedicaListBtnAdd = 2131165204;
@@ -199,11 +199,14 @@ namespace Project22
 			// aapt resource value: 0x7f070021
 			public const int lr_deleteBtn = 2131165217;
 			
-			// aapt resource value: 0x7f070026
-			public const int lr_descriptin = 2131165222;
+			// aapt resource value: 0x7f070028
+			public const int lr_descriptin = 2131165224;
 			
 			// aapt resource value: 0x7f07001f
 			public const int lr_detalle = 2131165215;
+			
+			// aapt resource value: 0x7f070027
+			public const int lr_eddad = 2131165223;
 			
 			// aapt resource value: 0x7f070024
 			public const int lr_email = 2131165220;
@@ -232,20 +235,20 @@ namespace Project22
 			// aapt resource value: 0x7f07001d
 			public const int lr_presionarterial = 2131165213;
 			
-			// aapt resource value: 0x7f070027
-			public const int lr_viewBtn = 2131165223;
-			
-			// aapt resource value: 0x7f07002b
-			public const int personaListBtnAdd = 2131165227;
+			// aapt resource value: 0x7f070029
+			public const int lr_viewBtn = 2131165225;
 			
 			// aapt resource value: 0x7f07002d
-			public const int personaListBtnSearch = 2131165229;
+			public const int personaListBtnAdd = 2131165229;
+			
+			// aapt resource value: 0x7f07002f
+			public const int personaListBtnSearch = 2131165231;
+			
+			// aapt resource value: 0x7f070030
+			public const int personaListListView = 2131165232;
 			
 			// aapt resource value: 0x7f07002e
-			public const int personaListListView = 2131165230;
-			
-			// aapt resource value: 0x7f07002c
-			public const int personaListTxtSearch = 2131165228;
+			public const int personaListTxtSearch = 2131165230;
 			
 			// aapt resource value: 0x7f070013
 			public const int tableLayout = 2131165203;
@@ -254,13 +257,16 @@ namespace Project22
 			public const int tableRow1 = 2131165210;
 			
 			// aapt resource value: 0x7f070025
-			public const int textView1 = 2131165221;
+			public const int tableRow2 = 2131165221;
+			
+			// aapt resource value: 0x7f070026
+			public const int textView1 = 2131165222;
 			
 			// aapt resource value: 0x7f070009
 			public const int textView11 = 2131165193;
 			
-			// aapt resource value: 0x7f070028
-			public const int textView2 = 2131165224;
+			// aapt resource value: 0x7f07002a
+			public const int textView2 = 2131165226;
 			
 			// aapt resource value: 0x7f070020
 			public const int tlBtns = 2131165216;

@@ -31,7 +31,8 @@
                     android:layout_weight="1"
                     android:editable="false"
                     android:hint="Id"
-                    android:visibility="invisible" />
+                    android:visibility="invisible"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="fill_parent"
@@ -46,7 +47,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:hint="Identificación" />
+                    android:hint="Identificación"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -62,7 +64,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etid"
                     android:layout_weight="1"
-                    android:hint="Nombre" />
+                    android:hint="Nombre"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -78,7 +81,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etid"
                     android:layout_weight="1"
-                    android:hint="Apellidos" />
+                    android:hint="Apellidos"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -94,7 +98,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etapellidos"
                     android:layout_weight="1"
-                    android:hint="Dirección" />
+                    android:hint="Dirección"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -110,7 +115,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etapellidos"
                     android:layout_weight="1"
-                    android:hint="Correo" />
+                    android:hint="Correo"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -127,7 +133,8 @@
                     android:layout_below="@+id/etcorreo"
                     android:layout_weight="1"
                     android:hint="Teléfono"
-                    android:phoneNumber="true" />
+                    android:phoneNumber="true"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -136,14 +143,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Fecha Nac" />
-                <EditText
+            <EditText
                     android:id="@+id/dpfechanac"
                     style="@style/input_style"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ettelefono"
                     android:layout_weight="1"
-                    android:hint="Fecha Nac: 25/12/2017" />
+                    android:hint="Fecha Nac: 25/12/2017"
+                    android:layout_column="2"
+                    android:inputType="date" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -159,7 +168,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/dpfechanac"
                     android:layout_weight="1"
-                    android:hint="Sexo" />
+                    android:hint="Sexo"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -175,7 +185,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etsexo"
                     android:layout_weight="1"
-                    android:hint="Estado Civil" />
+                    android:hint="Estado Civil"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -191,7 +202,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etestadocivil"
                     android:layout_weight="1"
-                    android:hint="Tipo de Sangre" />
+                    android:hint="Tipo de Sangre"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -212,7 +224,8 @@
                     android:inputType="textMultiLine"
                     android:lines="4"
                     android:scrollHorizontally="false"
-                    android:scrollbars="vertical" />
+                    android:scrollbars="vertical"
+                    android:layout_column="2" />
             </TableRow>
             <TableRow
                 android:layout_width="match_parent"
@@ -225,7 +238,8 @@
                     android:id="@+id/btninsertar"
                     style="@style/button_style"
                     android:layout_weight="1"
-                    android:text=" Insertar " />
+                    android:text=" Insertar "
+                    android:layout_column="2" />
             </TableRow>
         </TableLayout>
     </ScrollView>

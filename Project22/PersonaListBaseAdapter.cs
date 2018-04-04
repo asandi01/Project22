@@ -16,7 +16,7 @@ namespace Project22 {
         IList<Persona> personaListArrayList;
         private LayoutInflater mInflater;
         private Context activity;
-               
+
         public PersonaListBaseAdapter(Context context, IList<Persona> results) {
             this.activity=context;
             personaListArrayList=results;
@@ -50,13 +50,15 @@ namespace Project22 {
                 holder.txtNombre=convertView.FindViewById<TextView>(Resource.Id.lr_fullName);
                 holder.txtApellidos=convertView.FindViewById<TextView>(Resource.Id.lr_mobile);
                 holder.txtDetalle=convertView.FindViewById<TextView>(Resource.Id.lr_descriptin);
+                holder.txtEdad=convertView.FindViewById<TextView>(Resource.Id.lr_eddad);
+
                 btnDelete=convertView.FindViewById<ImageView>(Resource.Id.lr_deleteBtn);
                 btnView=convertView.FindViewById<ImageView>(Resource.Id.lr_viewBtn);
 
-                                                     
 
 
-                btnView.Click+=(object sender, EventArgs e) =>  {
+
+                btnView.Click+=(object sender, EventArgs e) => {
                     var poldel = (int)((sender as ImageView).Tag);
 
                     string id = personaListArrayList[poldel].id.ToString();
@@ -68,11 +70,11 @@ namespace Project22 {
                     activity2.PutExtra("PersonaNombre", personaListArrayList[poldel].nombre.ToString());
                     activity2.PutExtra("PersonaIdentificacion", personaListArrayList[poldel].identificacion.ToString());
                     activity.StartActivity(activity2);
-                    Toast.MakeText(activity, "Ver persona: " +id +" " +nombre +" " +identificacion, ToastLength.Short).Show();
+                    Toast.MakeText(activity, "Ver persona: "+id+" "+nombre+" "+identificacion, ToastLength.Short).Show();
                 };
 
 
-                btnDelete.Click+=(object sender, EventArgs e) => { 
+                btnDelete.Click+=(object sender, EventArgs e) => {
                     var poldel = (int)((sender as ImageView).Tag);
                     string id = personaListArrayList[poldel].id.ToString();
                     string fname = personaListArrayList[poldel].nombre;
@@ -80,7 +82,7 @@ namespace Project22 {
                     AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                     AlertDialog confirm = builder.Create();
                     confirm.SetTitle("Confirmacion de borrado");
-                    confirm.SetMessage("Se va a eliminar esta perona: " + id + " Nombre: " +fname);
+                    confirm.SetMessage("Se va a eliminar esta perona: "+id+" Nombre: "+fname);
                     confirm.SetButton("OK", (s, ev) => {
 
                         personaListArrayList.RemoveAt(poldel);
@@ -107,11 +109,19 @@ namespace Project22 {
                 btnDelete.Tag=position;
                 btnView.Tag=position;
             }
+                                                 
+            DateTime nacimiento = new DateTime(Convert.ToDateTime(personaListArrayList[position].fechaNac).Year, Convert.ToDateTime(personaListArrayList[position].fechaNac).Month, Convert.ToDateTime(personaListArrayList[position].fechaNac).Day);
+            int edad = DateTime.Today.AddTicks(-nacimiento.Ticks).Year-1;
+            string edadString = "";
+            if (edad<200) {
+                edadString=edad.ToString();
+            }
 
             holder.txtIdentificacion.Text=personaListArrayList[position].identificacion;
             holder.txtNombre.Text=personaListArrayList[position].nombre.ToString();
             holder.txtApellidos.Text=personaListArrayList[position].apellidos;
             holder.txtDetalle.Text=personaListArrayList[position].detalle;
+            holder.txtEdad.Text=edadString;
 
             if (position%2==0) {
                 convertView.SetBackgroundResource(Resource.Drawable.list_selector);
@@ -137,6 +147,9 @@ namespace Project22 {
                 get; set;
             }
             public TextView txtDetalle {
+                get; set;
+            }
+            public TextView txtEdad {
                 get; set;
             }
         }

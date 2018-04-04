@@ -5,110 +5,131 @@
     android:background="@drawable/list_selector"
     android:orientation="vertical"
     android:padding="2dp">
-    <TableLayout
+  <TableLayout
+      android:layout_width="fill_parent"
+      android:padding="3dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/tlMain"
+      android:layout_marginRight="26.5dp">
+    <TableRow
         android:layout_width="fill_parent"
-        android:padding="3dp"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="2dp"
+          android:text="Nombre: "
+          android:textColor="#000" />
+      <TextView
+          android:id="@+id/lr_fullName"
+          android:layout_width="175.5dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:text="Full Name"
+          android:textColor="#0000dd"
+          android:textSize="15dp"
+          android:textStyle="bold" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="2dp"
+          android:text="Apellidos: "
+          android:textColor="#000" />
+      <TextView
+          android:id="@+id/lr_mobile"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:text="Mobile"
+          android:textColor="#0000dd"
+          android:textSize="15dip"
+          android:textStyle="bold" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="2dp"
+          android:text="Identificación: "
+          android:textColor="#000" />
+      <TextView
+          android:id="@+id/lr_email"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:text="Email"
+          android:textColor="#0000dd"
+          android:textSize="15dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tlMain"
-        android:layout_marginRight="26.5dp">
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="2dp"
-                android:text="Nombre: "
-                android:textColor="#000" />
-            <TextView
-                android:id="@+id/lr_fullName"
-                android:layout_width="175.5dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:text="Full Name"
-                android:textColor="#0000dd"
-                android:textSize="15dp"
-                android:textStyle="bold" />
-        </TableRow>
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="2dp"
-                android:text="Apellidos: "
-                android:textColor="#000" />
-            <TextView
-                android:id="@+id/lr_mobile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:text="Mobile"
-                android:textColor="#0000dd"
-                android:textSize="15dip"
-                android:textStyle="bold" />
-        </TableRow>
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="2dp"
-                android:text="Identificación: "
-                android:textColor="#000" />
-            <TextView
-                android:id="@+id/lr_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:text="Email"
-                android:textColor="#0000dd"
-                android:textSize="15dp" />
-        </TableRow>
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tableRow1">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="2dp"
-                android:text="Detalle: "
-                android:textColor="#000"
-                android:id="@+id/textView1" />
-            <TextView
-                android:id="@+id/lr_descriptin"
-                android:layout_width="189.0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:text="description"
-                android:textColor="#0000dd"
-                android:textSize="15dp" />
-        </TableRow>
-    </TableLayout>
-    <TableLayout
-        android:layout_width="100dip"
-        android:padding="3dp"
+        android:id="@+id/tableRow2">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="2dp"
+          android:text="Edad: "
+          android:textColor="#000"
+          android:id="@+id/textView1" />
+      <TextView
+          android:id="@+id/lr_eddad"
+          android:layout_width="189.0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:text="Edad"
+          android:textColor="#0000dd"
+          android:textSize="15dp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tlBtns"
-        android:layout_alignParentRight="true">
-        <ImageView
-            android:id="@+id/lr_viewBtn"
-            android:layout_width="45.5dp"
-            android:layout_height="50dip"
-            android:src="@drawable/search"
-            android:clickable="true" />
-        <ImageView
-            android:id="@+id/lr_deleteBtn"
-            android:layout_width="47.5dp"
-            android:layout_height="50dip"
-            android:src="@drawable/delete"
-            android:clickable="true" />
-    </TableLayout>
+        android:id="@+id/tableRow1">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="2dp"
+          android:text="Detalle: "
+          android:textColor="#000"
+          android:id="@+id/textView1" />
+      <TextView
+          android:id="@+id/lr_descriptin"
+          android:layout_width="189.0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:text="description"
+          android:textColor="#0000dd"
+          android:textSize="15dp" />
+    </TableRow>
+  </TableLayout>
+  <TableLayout
+      android:layout_width="100dip"
+      android:padding="3dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/tlBtns"
+      android:layout_alignParentRight="true">
+    <ImageView
+        android:id="@+id/lr_viewBtn"
+        android:layout_width="45.5dp"
+        android:layout_height="50dip"
+        android:src="@drawable/search"
+        android:clickable="true" />
+    <ImageView
+        android:id="@+id/lr_deleteBtn"
+        android:layout_width="47.5dp"
+        android:layout_height="50dip"
+        android:src="@drawable/delete"
+        android:clickable="true" />
+  </TableLayout>
 </RelativeLayout>
