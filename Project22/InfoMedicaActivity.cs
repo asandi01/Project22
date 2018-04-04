@@ -52,7 +52,7 @@ namespace Project22 {
 
             lv.Adapter=new InfoMedicaListBaseAdapter(this, listItsms);
 
-            lv.ItemLongClick+=lv_ItemLongClick;
+            lv.ItemLongClick += lv_ItemLongClick;
         }
 
         private void lv_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e) {
